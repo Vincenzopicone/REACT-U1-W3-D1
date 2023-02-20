@@ -7,6 +7,16 @@ export const SEARCH_JOB = "SEARCH_JOB";
 
 /// DISPATCH
 
+export const addToFav = (element) => ({
+  type: ADD_TO_FAV,
+  payload: element,
+});
+
+export const removeToFav = (element) => ({
+  type: REMOVE_TO_FAV,
+  payload: element,
+});
+
 /// FETCH
 
 export const getJobs = (props) => {

@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react'
+/* import { useEffect, useState } from 'react' */
 import { useDispatch, useSelector } from 'react-redux'
 import { Container, Row, Col, Form} from 'react-bootstrap'
 import Job from './Job'
-import { getJobs, SAVE_JOB, SEARCH_JOB } from '../redux/actions'
+import { getJobs, /* SAVE_JOB, */ SEARCH_JOB } from '../redux/actions'
 
 
 const MainSearch = () => {
-  const [query, setQuery] = useState("")
+/*   const [query, setQuery] = useState("") */
   /* const [jobs, setJobs] = useState([]) */
   const dispatch = useDispatch()
   const setJobs = useSelector(state =>state.search.job)
