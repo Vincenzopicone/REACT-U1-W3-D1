@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 
 const FavouritesCount = () => {
     const navigate = useNavigate();
-    const FavouritesLength = useSelector(state => state.favourites.content.length)
+    const FavouritesLength = useSelector(state => state.fav.favourites.content.length)
     return(
         <div className='w-100 d-flex justify-content-between p-5'>
             

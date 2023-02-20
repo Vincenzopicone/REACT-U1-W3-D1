@@ -1,4 +1,4 @@
-/* import { REMOVE_TO_FAV, ADD_TO_FAV } from "../actions";
+import { REMOVE_TO_FAV, ADD_TO_FAV } from "../actions";
 
 const initialState = {
   favourites: {
@@ -6,9 +6,9 @@ const initialState = {
   },
 };
 
-const appReducer = (state = initialState, action) => {
+const memoryReducer = (state = initialState, action) => {
   switch (action.type) {
-     case ADD_TO_FAV:
+    case ADD_TO_FAV:
       return {
         ...state,
         favourites: {
@@ -33,4 +33,4 @@ const appReducer = (state = initialState, action) => {
   }
 };
 
-export default appReducer; */
+export default memoryReducer;
